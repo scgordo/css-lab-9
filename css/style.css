@@ -1,0 +1,77 @@
+/* ===================================== 
+   Grid & Flexbox Layout
+======================================== */
+
+.main-content {
+  width: 95%;
+  max-width: 1200px;  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  margin-top: auto;
+}
+
+/* ===================================== 
+   Page Styles
+======================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.5;
+	font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: #F7FFEF;
+}
+a {
+  color: #1A535C;
+  text-decoration: none;
+}
+h1 {
+  font-family: Arial, serif;
+}
+p {
+  margin-bottom: 1.25em;
+}
+.main-content {
+  margin: 2em auto;
+}
+.card {
+  padding: 1.5em 1em;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.25em;
+}
+.card h1 {
+  color: #FF6B6B; 
+  margin: 0.35em 0 0;
+  line-height: 1.25;
+}
+.btn {
+  font-size: 0.85em;
+  color: #F7FFF7;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  background-color: #1A535C;
+  border-radius: 0.35em;
+  display: inline-block;
+}
+.btn:hover {
+  background-color: #FF6B6B;
+  color: #005AAD;
+}
+.material-icons {
+  color: #3EB1E3; 
+  font-size: 2.1em;
+}
